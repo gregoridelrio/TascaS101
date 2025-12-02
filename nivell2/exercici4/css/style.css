@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header,
+.main,
+.footer {
+  margin-top: 10px;
+}
+
+.header {
+  background-image: url("../img/header.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 170%;
+  width: 100%;
+  height: auto;
+}
+
+.nav-wrap {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+
+.logo,
+.nav,
+.social {
+  padding: 10px;
+  color: gray;
+}
+
+.logo,
+.social {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.social {
+  display: flex;
+  gap: 30px;
+}
+
+.logo img {
+  width: 100px;
+  animation: fadeIn 2s ease-in;
+}
+
+.nav {
+  flex-grow: 4;
+  font-size: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+  color: gray;
+}
+
+ul li {
+  padding: 5px;
+  text-decoration: none;
+}
+
+a {
+  color: gray;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+.banner-wrap {
+  margin-top: 10px;
+  padding: 0 100px;
+}
+
+.banner {
+  background-color: lightgray;
+  opacity: 0.5;
+  height: 100%;
+  padding-bottom: 50px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: orangered;
+  margin-top: 150px;
+  margin-bottom: 40px;
+  padding-top: 30px;
+  animation: fadeIn 3s ease-in;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 10px;
+}
+
+.section {
+  background-color: #d8d7d7;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.section .article {
+  background-color: #faf0e8;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: grid;
+}
+
+.article-photo {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 250px;
+  display: flex;
+}
+
+.photo-1 {
+  background-image: url("../img/sakura.jpg");
+}
+
+.photo-2 {
+  background-image: url("../img/comida.jpg");
+}
+
+.photo-3 {
+  background-image: url("../img/fuji.jpg");
+}
+
+.photo-4 {
+  background-image: url("../img/noche.jpg");
+}
+
+.article-photo {
+  flex-direction: row;
+  align-items: flex-end;
+  color: yellow;
+}
+
+.article-photo p {
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.article-title {
+  display: flex;
+  background-color: #f08080;
+  color: #faf0e8;
+  text-transform: uppercase;
+  margin-top: 5px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.article-title h2 {
+  margin: 0;
+  font-size: 25px;
+  padding-top: 10px;
+}
+
+.article-lorem {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  margin-bottom: 5px;
+
+}
+
+.article-readmore {
+  padding: 5px;
+}
+
+.navigation {
+  padding: 10px;
+  grid-column: span 2;
+  text-align: center;
+}
+
+.aside {
+  background-color: #d8d7d7;
+  padding: 10px;
+  text-align: center;
+}
+
+.publi {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.footer {
+  background-color: #d8d7d7;
+  padding: 0 10px;
+}
+
+.footer-wrap {
+  background-color: #f5f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-wrap {
+    display: block;
+  }
+
+  .logo,
+  .nav {
+    margin-bottom: 10px;
+  }
+
+  .main {
+    grid-template-columns: 1fr;
+  }
+
+  .social {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section {
+    display: block;
+  }
+
+  .header {
+    background-size: auto;
+  }
+}
+
+/* Exercici 6 */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
